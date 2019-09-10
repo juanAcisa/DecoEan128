@@ -7300,6 +7300,10 @@ namespace EAN128
             Ean128 E128 = new Ean128();
             string[] a = new string[512];
 
+            Console.WriteLine("                      0000000000111111111122222222223333333333444444444455555555556");
+            Console.WriteLine("                      0123456789012345678901234567890123456789012345678901234567890");
+            Console.WriteLine();
+            
             Console.Write("Introducir el EAN128: ");
 
             //string ean = Console.ReadLine();
@@ -7311,8 +7315,6 @@ namespace EAN128
             //string ean = "01987123456700193102003725251NL21243857";         // (01)98712345670019(3102)003725(251)NL21243857
             Console.WriteLine(ean);
 
-            Console.WriteLine("                                111111111122222222223333333333444444444455555555556");
-            Console.WriteLine("                      0123456789012345678901234567890123456789012345678901234567890");
             Console.WriteLine();
 
             a = Ean128.Decode(ean);
